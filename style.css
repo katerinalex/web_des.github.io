@@ -1,0 +1,383 @@
+@import url(https://fonts.googleapis.com/css?family=Lora);
+body {margin:0;}
+@media screen  and (min-width: 320px) and (max-width: 700px)
+{
+  .wrapper{
+    width: 320px;
+    /*  margin: 10px auto 30px;
+    margin: 10px 20px 30px auto; */
+    
+    margin: 0px auto;
+    background: #f2c6a0; 
+  }
+}
+@media screen  and (min-width: 700px) and (max-width: 1200px)
+{
+  .wrapper{
+  width: 700px;
+  margin: 0px auto;
+  background: #f2c6a0 
+}
+}
+
+@media screen  and (min-width: 1200px)
+{
+  .wrapper{
+  width: 1200px;
+  margin: 0px auto; 
+  background: #f2c6a0 
+}
+}
+
+@media screen  and (min-width: 1200px)
+{
+  header
+{ width: 100%;
+  background: #27593d;
+ /*overflow:auto; */
+ height:58px;
+}
+}
+@media screen  and (min-width: 700px) and (max-width: 1200px)
+{
+  header
+{ width: 100%;
+  background: #27593d;
+ /*overflow:auto; */
+ height: 30px;
+}
+}
+@media screen  and (min-width: 320px) and (max-width: 700px)
+{
+  header
+{ width: 100%;
+  background: #27593d;
+ /*overflow:auto; */
+ height: 20px;
+}
+}
+
+
+.sub_menu
+{overflow:visible;
+  position: absolute;}
+
+
+.logo
+{padding: 0px 40px 0px 3px;  
+  float: left;
+}
+@media screen  and (min-width: 700px) and (max-width: 1200px)
+{
+  .logo
+{ float: left;
+ 
+  padding: 0px 40px 0px 3px;  
+}
+}
+@media screen  and (min-width: 700px) and (max-width: 1200px)
+{ 
+  img.logo1
+{float: left;
+  width: 100px;
+   
+}
+} 
+@media screen  and (min-width: 320px) and (max-width: 700px)
+{.logo
+  { float: left;
+   
+    padding: 3px 7px 0px 3px;  
+  }
+  img.logo1
+{float: left;
+  width: 40px;
+  height: 11px;
+ 
+   
+}
+} 
+
+/* горизонтальне меню  */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+  background-color: rgb(6, 54, 18);
+}
+
+li {
+  border-radius: 6px;
+ 
+  border-right:6px solid #27593d;
+  background: #27593d;
+  width: 12.5%;
+  /*float: right;*/
+ /* float:left;*/
+ float:left;
+ 
+ /*justify-content:flex-end; */
+  
+}
+
+li a {
+  border-radius: 6px;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 19px 16px;
+  text-decoration: none;
+  background:#1f8e7e;  
+}
+@media screen  and (min-width: 700px) and (max-width: 1200px)
+{
+  li a {
+    border-radius: 6px;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 5px 8px;
+    text-decoration: none;
+    background:#1f8e7e;  
+  }
+}
+@media screen  and (min-width: 320px) and (max-width: 700px)
+{
+  li a {
+    border-radius: 6px;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 5px 4px;
+    text-decoration: none;
+    background:#1f8e7e; 
+    font-size: 8px; 
+  }
+}
+
+li a:hover:not(.active) {
+  background: #5cb3a6;
+}
+.active {
+  background: #5cb3a6;
+}
+.sub-menu_col_7_8
+{position: relative;
+  display: inline-block;
+  width: 25%;
+}
+/* випадаюче меню */
+.sub-menu_content
+{/*float: inherit; 
+  float: left;*/
+  display: none;
+  position: absolute;
+  
+  background: #1f8e7e;
+  min-width: 5px;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+  padding: 3px 4px;
+  z-index: 1;
+}
+@media screen  and (min-width: 320px) and (max-width: 700px)
+{
+  .sub-menu_content
+{
+  font-size: 8px;
+}
+}
+
+ 
+.sub-menu_col_7_8:hover .sub-menu_content {
+  display: block;
+}
+ul.sub_menu
+{
+  width: 100%;
+}
+
+a._signin:link,  a._signin:visited
+{
+  background: #5cb3a6;
+  padding: 10px 0px; 
+  font-size: 16px;
+}
+li a._signin:hover:not(.active) {
+  background: #1f8e7e;
+ 
+}
+.active {
+  background: #1f8e7e;
+  
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background: #5cb3a6;
+  color: #000000;
+  
+  
+}
+
+
+button[type=submit] {
+  width: 100%;
+  background: #1f8e7e;
+  color: #000000;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=password]
+{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background: #5cb3a6;
+  color: #000000;
+}
+
+@media screen  and (min-width: 320px) and (max-width: 700px)
+{
+  input[type=text], select {
+    padding: 10px 5px;
+    font-size: 8px;
+    
+  }
+  button[type=submit] {
+    padding: 10px 5px;
+    font-size: 8px;
+  }
+  input[type=password]
+  { 
+    padding: 10px 5px;
+    font-size: 8px;
+    
+  }
+}
+/* таблиця */
+table, td, th {
+  border: 1px solid black;
+
+}
+
+table {
+ 
+  border-collapse: collapse;
+  float: right;
+  width: 62.5%;
+  background: #ffffff;
+}
+caption
+{
+  background: #ffffff;
+}
+@media screen  and (min-width: 320px) and (max-width: 700px)
+{
+  table {
+ 
+    
+    width: 100%;
+    
+  }
+}
+/* інфо картки  */
+h3
+{
+  text-align: center;
+}
+@media screen  and (min-width: 700px)
+{
+  .Row
+{
+  display:flex;
+}
+
+}
+@media screen  and (min-width: 700px) 
+{
+  div.Cell {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 25%;
+}
+}
+
+@media screen  and (min-width: 320px) and (max-width: 700px)
+{
+  div.Cell {
+    margin: 0px;
+    border: 1px solid  #f2c6a0;
+    float: left;
+    width: 100%;
+  }
+  
+}
+
+
+div.Cell:hover {
+  border: 1px solid #777;
+}
+
+div.Cell img {
+  width: 100%;
+  height: auto;
+}
+
+div.info_cell {
+  padding: 15px;
+  text-align: center;
+}
+a.inf_link:link, a.inf_link:visited {
+  background: #5cb3a6;
+  color: rgb(0, 0, 0);
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  display: flex;
+  align-items:flex-end;
+  justify-content:center;
+  
+}
+a.inf_link:hover, a.inf_link:active {
+  background:#27593d;
+}
+.Cell
+{
+  background: #1f8e7e;
+}
+/* банер  */
+.baner
+{
+  width: 100%;
+  
+}
+
+footer
+{
+  width: 100%;
+  background: #27593d;
+ overflow:auto;
+ display: flex;
+ justify-content:space-around;
+ color:#000000;
+ line-height: 10%;
+
+}
+.face,.twit
+{color: rgb(0, 0, 0);
+  text-decoration: none;}
